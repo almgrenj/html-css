@@ -221,6 +221,7 @@
     cursor: pointer;
     margin-right: 20px;
     transition: background-color 0.3s ease;
+    margin-bottom: 5rem;
   }
   
   .hero-button {
@@ -841,22 +842,22 @@
     padding: 0 13rem;
     margin-bottom: 2rem;
   }
-  
+
   .team-header-title {
-    color: #020023;
-    font-size: 36px;
-    font-weight: bold;
-    margin: 0 0 20px 0;
-    text-align: left;
-  }
-  
-  .team-header-subtitle {
     color: orange;
     font-size: 1rem;
     margin-bottom: 20px;
     text-align: left;
     font-weight: bold;
     margin-top: 3rem;
+  }
+  
+  .team-header-subtitle {
+    color: #020023;
+    font-size: 36px;
+    font-weight: bold;
+    margin: 0 0 20px 0;
+    text-align: left;
   }
 
   .browse-team-button {
