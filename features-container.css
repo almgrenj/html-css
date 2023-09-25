@@ -1,0 +1,156 @@
+.features-container {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 20px; 
+    align-items: start;
+    border: 1px solid #ededed;
+    padding: 60px 30px;
+    margin: 2rem 100px;
+}
+  
+  .text-section {
+    display: flex;
+    flex-direction: column;
+    max-width: 55%;
+    padding: 0 20px 0 30px;
+    gap: 20px; 
+  }
+  
+  .title-container, .textbox-section {
+    display: grid;
+    gap: 20px; 
+  }
+  
+  .title-container {
+    grid-template-rows: auto auto;
+    align-items: flex-start;
+    margin-right: 10rem;
+  }
+  
+  .textbox-section {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: auto;
+    max-width: 80%;
+    padding: 20px 10px;
+  }
+  
+  .features-title {
+    font-size: 1rem;
+    color: orange;
+    margin-left: 5rem;
+  }
+  
+  .features-subtitle {
+    color: #020023;
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.2em;
+    margin-left: 5rem;
+  }
+  
+  .textbox-title {
+    margin: 0;
+    font-weight: bold;
+  }
+  
+  .textbox-text {
+    margin: 0;
+    margin-top: 1rem;
+  }
+  
+  .textbox {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    padding: 20px;
+  }
+
+  .learn-more-button {
+    padding: 12px 24px;
+    font-size: 1rem;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    background-color: #f4ed6f;
+    color: black;
+    width: 400px;
+    border: none;
+    margin-left: 5rem;
+}
+
+  .learn-more-button:hover {
+    background-color: #f0e68c;
+  }
+  
+  .learn-more-button .fas.fa-arrow-right {
+    transform: rotate(-45deg);
+  }
+  
+  .learn-more-button:hover {
+    background-color: black;
+    color: #fff;
+  }
+  
+  .icon-class {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    align-self: start;
+  }
+
+
+  @media (max-width: 1024px) {
+    .features-container {
+        margin: 2rem 50px;
+    }
+
+    .learn-more-button {
+        width: 300px;
+        margin-left: 3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .features-container {
+        grid-template-columns: 1fr;
+        padding: 40px 20px;
+        margin: 2rem 10px;
+    }
+  
+    .text-section {
+        max-width: 100%;
+        padding: 0;
+    }
+
+    .features-title {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .features-subtitle {
+        max-width: 100%;
+        text-align: center;
+    }
+  
+    .textbox-section {
+        grid-template-columns: 1fr;
+        padding: 10px 5px;
+    }
+
+    .title-container {
+        margin-right: 0;
+    }
+
+    .features-title, .features-subtitle {
+        margin-left: 1rem;
+    }
+
+    .learn-more-button {
+        width: 100%;
+        margin-left: 0;
+        padding: 12px 16px;
+    }
+}
