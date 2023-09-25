@@ -1,0 +1,116 @@
+.footer {
+    background-color: #0e1021;
+    color: gray;
+    position: relative;
+  
+    .footer-bg-image {
+      position: absolute;
+      bottom: 3.7rem;
+      right: 0;
+      z-index: 1;
+    }
+  
+    .footer-content {
+      display: grid;
+      align-items: center;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 20px;
+      padding: 20px 220px;
+    }
+  
+    .footer-column {
+      display: flex;
+      flex-direction: column;
+      padding: 0 20px;
+  
+      &-title {
+        margin-bottom: 10px;
+        font-size: 18px;
+        font-weight: bold;
+        color: #ccc;
+      }
+      
+      a,
+      p {
+        display: block;
+        margin-bottom: 20px;
+        text-decoration: none;
+        
+        &:link, 
+        &:visited {
+          color: gray;
+        }
+        
+        &:hover {
+          color: #ccc;
+          text-decoration: none;
+        }
+      }
+  
+      .footer-logo-img {
+        margin-bottom: 10px;
+      }
+    }
+  
+    .copyright-section {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px 220px;
+      border-top: 1px solid rgba(255, 255, 255, 0.2);
+  
+      p {
+        color: gray;
+      }
+    }
+  
+    .social-media-links {
+      display: flex;
+      gap: 20px;
+  
+      a {
+        color: #fff;
+      }
+    }
+  
+    @media (max-width: 768px) {
+      .footer-content {
+        padding: 20px 15px;
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+      }
+  
+      .footer-column {
+        padding: 0 10px;
+  
+        &-title {
+          font-size: 16px;
+          margin-bottom: 8px;
+        }
+        
+        a, p {
+          margin-bottom: 15px;
+        }
+  
+        .footer-logo-img {
+          margin-bottom: 8px;
+        }
+      }
+  
+      .copyright-section {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px 15px;
+        gap: 10px;
+      }
+  
+      .social-media-links {
+        gap: 15px;
+      }
+  
+      .footer-bg-image {
+        bottom: 5.5rem;
+      }
+    }
+  }
+  
